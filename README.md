@@ -1,4 +1,6 @@
 # CRUD
+C: create
+R: read
 
 ## 0. setting
 
