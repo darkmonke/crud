@@ -20,6 +20,20 @@ from posts import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index),
+    # Read(All)
+    path('posts/', views.index),
+    # Read(1)
     path('posts/<int:id>/', views.detail),
+    # Create
+    path('posts/new/', views.new),
+    path('posts/create/', views.create),
+    # Delete
+    path('posts/<int:id>/delete/', views.delete),
+    # Update
+    path('posts/<int:id>/edit/', views.edit),
+    path('posts/<int:id>/update/', views.update),
 ]
+
+# 1. delete 사용자가 삭제 버튼을 누른다.
+# 2. 찾는다.
+# 3. 
